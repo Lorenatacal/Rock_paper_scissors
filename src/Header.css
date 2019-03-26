@@ -1,0 +1,23 @@
+.App-header {
+    background-color:white;
+    margin-top: 1%;
+    align-items: center;
+    font-size: 90%;
+    color: black;
+  }
+  
+  .App-logo {
+    margin-top: -2%;
+    animation: App-logo-spin infinite 40s linear;
+    height: 30vmin;
+    pointer-events: none;
+  }
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
