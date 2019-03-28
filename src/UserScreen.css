@@ -1,7 +1,8 @@
 .split {
     height: 80%;
+    margin-bottom: 2%;
     width: 50%;
-    position: fixed;
+    position: absolute;
     z-index: 1;
     overflow-x: hidden;
     padding-top: 20px;
