@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import './UserScreen.css';
+import AddName from './AddName';
 
 class UserScreen extends Component {
     render() {
         return (
             <div class= "split left">
-                <p> Please enter your name bellow</p>
+                <AddName />
             </div>
         );
     }
