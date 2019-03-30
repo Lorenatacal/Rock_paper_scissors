@@ -9,36 +9,42 @@ class AddName extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      name: ""
+      name: "",
+      swowMessage: false
     };
-    this.handleChange = this.handleChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
-  handleChange(e) {
+  handleChange = e => {
     this.setState({
       name: e.target.value
     });
-  }
+  };
 
-  handleSubmit(e) {
-    e.preventdefault();
-    this.setState({});
-  }
+  onClick = e => {
+    this.setState({
+      showMessage: true
+    });
+    e.preventDefault();
+  };
+
   render() {
+    const { showMessage } = this.state;
+
     return (
       <div>
-        <form>
-          <input
-            type="text"
-            placeholder="Type your name here"
-            onChange={this.handleChange}
-          />
-          <button type="submit" onSubmit={this.handleChange}>
-            Submit
-          </button>
-        </form>
-        <p>Wecome to the game {this.state.name}</p>
+        <input
+          type="text"
+          onChange={this.handleChange}
+          placeholder="Type your name here"
+        />
+        <button id="button" type="submit" value="Submit" onClick={this.onClick}>
+          Submit
+        </button>
+        {showMessage ? (
+          <p>Wecome to the game {this.state.name}</p>
+        ) : (
+          <p>Please type your name</p>
+        )}
       </div>
     );
   }
