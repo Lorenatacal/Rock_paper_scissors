@@ -1,9 +1,4 @@
 import React, { Component } from "react";
-import styled from "styled-components";
-
-// const StyledText = styled.p`
-//   visibility: hidden;
-// `;
 
 class AddName extends Component {
   constructor(props) {
