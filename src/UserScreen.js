@@ -1,14 +1,14 @@
 import React, { Component } from "react";
 import "./UserScreen.css";
 import AddName from "./AddName";
-import UserOptions from "./UserOptions";
+import Options from "./Options";
 
 class UserScreen extends Component {
   render() {
     return (
       <div className="split left">
         <AddName />
-        <UserOptions />
+        <Options />
       </div>
     );
   }

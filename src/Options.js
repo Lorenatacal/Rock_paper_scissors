@@ -12,7 +12,7 @@ const StyledImage = styled.img`
   }
 `;
 
-class UserOptions extends Component {
+class Options extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -55,4 +55,4 @@ class UserOptions extends Component {
   }
 }
 
-export default UserOptions;
+export default Options;
