@@ -1,15 +1,15 @@
 .split {
-    height: 80%;
-    margin-bottom: 2%;
-    width: 50%;
-    position: absolute;
-    z-index: 1;
-    overflow-x: hidden;
-    padding-top: 20px;
+  height: 60%;
+  margin-bottom: 2%;
+  width: 50%;
+  position: absolute;
+  z-index: 1;
+  overflow-x: hidden;
+  padding-top: 20px;
 }
 .left {
-    left: 2%;
-    right: 1%;
-    background-color: rgb(228, 227, 227);
-    color: black;
-  }
+  left: 2%;
+  right: 1%;
+  background-color: rgb(228, 227, 227);
+  color: black;
+}

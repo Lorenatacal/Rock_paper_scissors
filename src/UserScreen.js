@@ -8,7 +8,7 @@ class UserScreen extends Component {
     return (
       <div className="split left">
         <AddName />
-        <Options />
+        <Options action={this.props.action} />
       </div>
     );
   }
