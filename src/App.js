@@ -3,6 +3,7 @@ import Header from "./Header.js";
 import UserScreen from "./UserScreen.js";
 import ComputerScreen from "./ComputerScreen.js";
 import "./App.css";
+import randomOptions from "./utils/randomOptions.js";
 
 class App extends Component {
   constructor(props) {
@@ -15,12 +16,13 @@ class App extends Component {
 
   handleClick = e => {
     this.setState({
-      userValue: e.target.name
+      userValue: e.target.name,
+      computerValue: randomOptions()
     });
   };
 
   render() {
-    console.log(this.state.userValue, "value");
+    console.log(this.state, "value");
     return (
       <div id="wrapper" className="App">
         <Header />
