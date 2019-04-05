@@ -1,1 +1,1 @@
-export default function choseWinner() {}
+export default function choseWinner(userValue, computerValue) {}
