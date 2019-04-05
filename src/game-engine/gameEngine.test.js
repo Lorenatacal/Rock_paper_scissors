@@ -16,4 +16,10 @@ describe("choseWinner()", () => {
     let winner = choseWinner(userValue, computerValue);
     expect(winner).toEqual("Draw");
   });
+  test("should return Draw if both user and computer chose rock", () => {
+    let userValue = "rock";
+    let computerValue = "rock";
+    let winner = choseWinner(userValue, computerValue);
+    expect(winner).toEqual("Draw");
+  });
 });
