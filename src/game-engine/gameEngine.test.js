@@ -28,4 +28,10 @@ describe("choseWinner()", () => {
     let winner = choseWinner(userValue, computerValue);
     expect(winner).toEqual("User won");
   });
+  test("should return 'User won' if user choses scissor and user paper", () => {
+    let userValue = "scissor";
+    let computerValue = "paper";
+    let winner = choseWinner(userValue, computerValue);
+    expect(winner).toEqual("User won");
+  });
 });
