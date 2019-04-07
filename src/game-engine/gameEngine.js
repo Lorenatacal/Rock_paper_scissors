@@ -8,4 +8,7 @@ export default function choseWinner(userValue, computerValue) {
   if ((userValue === "rock") & (computerValue === "rock")) {
     return "Draw";
   }
+  if ((userValue === "rock") & (computerValue === "scissor")) {
+    return "User won";
+  }
 }
