@@ -15,7 +15,8 @@ export default function choseWinner(userValue, computerValue) {
   }
   if (
     (userValue === "scissor" && computerValue === "rock") ||
-    (userValue === "paper" && computerValue === "scissor")
+    (userValue === "paper" && computerValue === "scissor") ||
+    (userValue === "rock" && computerValue === "paper")
   ) {
     return "Computer won";
   }
