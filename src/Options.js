@@ -13,19 +13,6 @@ const StyledImage = styled.img`
 `;
 
 class Options extends Component {
-  // constructor(props) {
-  //   super(props);
-  //   this.state = {
-  //     value: ""
-  //   };
-  // }
-
-  // handleClick = e => {
-  //   this.setState({
-  //     value: e.target.name
-  //   });
-  // };
-
   render() {
     return (
       <div>

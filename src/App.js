@@ -4,6 +4,7 @@ import UserScreen from "./UserScreen.js";
 import ComputerScreen from "./ComputerScreen.js";
 import "./App.css";
 import randomOptions from "./utils/randomOptions.js";
+import gameEngine from "./game-engine/gameEngine.js";
 
 class App extends Component {
   constructor(props) {
@@ -22,10 +23,14 @@ class App extends Component {
   };
 
   render() {
-    console.log(this.state, "value");
     return (
       <div id="wrapper" className="App">
         <Header />
+        <span>{this.state.userValue}</span>
+        <span>{this.state.computerValue}</span>
+        <span>
+          {gameEngine(this.state.userValue, this.state.computerValue)}
+        </span>
         <UserScreen action={this.handleClick} />
         <ComputerScreen />
       </div>
