@@ -1,20 +1,34 @@
-export default function choseWinner(userValue, computerValue) {
-  // console.log(userValue, "user", computerValue, "comp");
+export default function choseWinner(
+  userValue,
+  computerValue,
+  userScore = 0,
+  computerScore = 0
+) {
   if (
     (userValue === "rock" && computerValue === "scissors") ||
     (userValue === "scissors" && computerValue === "paper") ||
     (userValue === "paper" && computerValue === "rock")
   ) {
-    console.log(userValue, "user", computerValue, "comp");
-    return "User won";
+    return {
+      winner: "User won",
+      userScore: userScore + 1,
+      computerScore
+    };
   }
   if (
     (userValue === "scissors" && computerValue === "rock") ||
     (userValue === "paper" && computerValue === "scissors") ||
     (userValue === "rock" && computerValue === "paper")
   ) {
-    console.log({ userValue, computerValue });
-    return "Computer won";
+    return {
+      winner: "Computer won",
+      userScore,
+      computerScore: computerScore + 1
+    };
   }
-  return "Draw";
+  return {
+    winner: "Draw",
+    userScore,
+    computerScore
+  };
 }

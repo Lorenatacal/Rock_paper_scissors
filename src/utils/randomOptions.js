@@ -1,4 +1,4 @@
-let options = ["rock", "paper", "scissorss"];
+let options = ["rock", "paper", "scissors"];
 
 export default function randomOptions() {
   const index = Math.random() * options.length;

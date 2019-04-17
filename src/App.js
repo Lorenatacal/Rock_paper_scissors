@@ -11,7 +11,9 @@ class App extends Component {
     super(props);
     this.state = {
       userValue: "",
-      computerValue: ""
+      computerValue: "",
+      userScore: 0,
+      computerScore: 0
     };
   }
 
@@ -23,14 +25,21 @@ class App extends Component {
   };
 
   render() {
+    let { winner, userScore, computerScore } = gameEngine(
+      this.state.userValue,
+      this.state.computerValue
+    );
+
     return (
       <div id="wrapper" className="App">
         <Header />
-        <span>{this.state.userValue}</span>
-        <span>{this.state.computerValue}</span>
-        <span>
-          {gameEngine(this.state.userValue, this.state.computerValue)}
-        </span>
+        <p>
+          {this.state.userValue} {this.state.computerValue}
+        </p>
+        <p>{winner}</p>
+        <p>
+          {userScore}-{computerScore}
+        </p>
         <UserScreen action={this.handleClick} />
         <ComputerScreen />
       </div>
