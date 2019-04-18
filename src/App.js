@@ -5,6 +5,25 @@ import ComputerScreen from "./ComputerScreen.js";
 import "./App.css";
 import randomOptions from "./utils/randomOptions.js";
 import gameEngine from "./game-engine/gameEngine.js";
+import styled from "styled-components";
+
+const StyledResult = styled.div`
+  margin-left: 1%;
+  margin-right: 1%;
+  background-image: linear-gradient(to right, orangered, rgb(255, 69, 0, 0.7));
+  color: black;
+`;
+const StyledUserValue = styled.p`
+  width: 38%;
+  float: left;
+`;
+const StyledComputerValue = styled.p`
+  width: 38%;
+  float: right;
+`;
+const StyledWinner = styled.p`
+  text-align: center;
+`;
 
 class App extends Component {
   constructor(props) {
@@ -43,13 +62,14 @@ class App extends Component {
     return (
       <div id="wrapper" className="App">
         <Header />
-        <p>
-          {this.state.userValue} {this.state.computerValue}
-        </p>
-        <p>{winner}</p>
-        <p>
-          {userScore}-{computerScore}
-        </p>
+        <StyledResult>
+          <StyledUserValue>{this.state.userValue}</StyledUserValue>
+          <StyledComputerValue>{this.state.computerValue}</StyledComputerValue>
+          <StyledWinner>{winner}</StyledWinner>
+          <p>
+            {userScore}-{computerScore}
+          </p>
+        </StyledResult>
         <UserScreen action={this.handleClick} />
         <ComputerScreen />
       </div>
