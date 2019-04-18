@@ -18,16 +18,26 @@ class App extends Component {
   }
 
   handleClick = e => {
+    let { userScore, computerScore } = gameEngine(
+      this.state.userValue,
+      this.state.computerValue,
+      this.state.userScore,
+      this.state.computerScore
+    );
     this.setState({
       userValue: e.target.name,
-      computerValue: randomOptions()
+      computerValue: randomOptions(),
+      userScore,
+      computerScore
     });
   };
 
   render() {
     let { winner, userScore, computerScore } = gameEngine(
       this.state.userValue,
-      this.state.computerValue
+      this.state.computerValue,
+      this.state.userScore,
+      this.state.computerScore
     );
 
     return (
