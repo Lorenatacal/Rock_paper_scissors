@@ -5,7 +5,8 @@ class AddName extends Component {
     super(props);
     this.state = {
       name: "",
-      swowMessage: false
+      showMessage: false,
+      showInput: true
     };
   }
 
@@ -17,29 +18,38 @@ class AddName extends Component {
 
   onClick = e => {
     this.setState({
-      showMessage: true
+      showMessage: true,
+      showInput: false
     });
     e.preventDefault();
   };
 
   render() {
     const { showMessage } = this.state;
+    const { showInput } = this.state;
 
     return (
       <div>
-        <input
-          type="text"
-          onChange={this.handleChange}
-          placeholder="Type your name here"
-        />
-        <button id="button" type="submit" value="Submit" onClick={this.onClick}>
-          Submit
-        </button>
-        {showMessage ? (
-          <p>Wecome to the game {this.state.name}</p>
+        {showInput ? (
+          <div>
+            <input
+              type="text"
+              onChange={this.handleChange}
+              placeholder="Type your name here"
+            />
+            <button
+              id="button"
+              type="submit"
+              value="Submit"
+              onClick={this.onClick}
+            >
+              Submit
+            </button>
+          </div>
         ) : (
-          <p>Please type your name</p>
+          <div />
         )}
+        {showMessage ? <p>Wecome to the game {this.state.name}</p> : <p />}
       </div>
     );
   }
