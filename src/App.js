@@ -23,6 +23,7 @@ const StyledComputerValue = styled.p`
 `;
 const StyledWinner = styled.p`
   text-align: center;
+  margin-top: -1%;
 `;
 
 class App extends Component {

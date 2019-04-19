@@ -1,20 +1,49 @@
 import React, { Component } from "react";
-import "./Header.css";
+import styled from "styled-components";
+
+const StyledHeader = styled.div`
+  margin-bottom: 2%;
+`;
+const StyledAppHeader = styled.header`
+  margin-left: 1%;
+  margin-right: 1%;
+  background-color: rgb(241, 239, 239);
+  font-size: 90%;
+  color: black;
+`;
+const StyledTitle = styled.h2`
+  margin-left: 20%;
+  margin-top: 1%;
+  position: absolute;
+`;
+const StyledLogo = styled.img`
+  animation: App-logo-spin infinite 40s linear;
+  height: 13vmin;
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  margin-left: 30%;
+  margin-top: 1%;
+`;
 
 class Header extends Component {
   render() {
     return (
-      <div className="Header">
-        <header className="App-header">
-          <h2>Play Rock Paper Scissors</h2>
-          <img
+      <StyledHeader>
+        <StyledAppHeader>
+          <StyledTitle>Play Rock Paper Scissors</StyledTitle>
+          <StyledLogo
             src="http://www.sclance.com/pngs/rock-paper-scissors-png/rock_paper_scissors_png_1176896.png"
-            className="App-logo"
             alt="logo"
             name="RockPaperScissors"
           />
-        </header>
-      </div>
+        </StyledAppHeader>
+      </StyledHeader>
     );
   }
 }

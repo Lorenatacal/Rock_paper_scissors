@@ -1,14 +1,30 @@
 import React, { Component } from "react";
-import "./ComputerScreen.css";
 import Options from "./Options";
+import styled from "styled-components";
+
+const StyledComputer = styled.div`
+  height: 53%;
+  margin-top: -1%;
+  margin-bottom: 1%;
+  width: 47%;
+  position: absolute;
+  z-index: 1;
+  overflow-x: hidden;
+  padding-top: 20px;
+  right: 2%;
+  background-color: rgb(241, 239, 239);
+`;
+const StyledText = styled.p`
+  margin-top: 1%;
+`;
 
 class ComputerScreen extends Component {
   render() {
     return (
-      <div className="split right">
-        <p className="text"> Computer's Options</p>
+      <StyledComputer>
+        <StyledText> Computer's Options</StyledText>
         <Options />
-      </div>
+      </StyledComputer>
     );
   }
 }
