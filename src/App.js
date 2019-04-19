@@ -2,11 +2,14 @@ import React, { Component } from "react";
 import Header from "./Header.js";
 import UserScreen from "./UserScreen.js";
 import ComputerScreen from "./ComputerScreen.js";
-import "./App.css";
 import randomOptions from "./utils/randomOptions.js";
 import gameEngine from "./game-engine/gameEngine.js";
 import styled from "styled-components";
 
+const StyledWrapper = styled.div`
+  margin: 1%;
+  text-align: center;
+`;
 const StyledResult = styled.div`
   margin-left: 1%;
   margin-right: 1%;
@@ -61,7 +64,7 @@ class App extends Component {
     );
 
     return (
-      <div id="wrapper" className="App">
+      <StyledWrapper>
         <Header />
         <StyledResult>
           <StyledUserValue>{this.state.userValue}</StyledUserValue>
@@ -73,7 +76,7 @@ class App extends Component {
         </StyledResult>
         <UserScreen action={this.handleClick} />
         <ComputerScreen />
-      </div>
+      </StyledWrapper>
     );
   }
 }

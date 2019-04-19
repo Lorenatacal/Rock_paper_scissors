@@ -27,7 +27,7 @@ const StyledLogo = styled.img`
       transform: rotate(360deg);
     }
   }
-  margin-left: 30%;
+  margin-left: 65%;
   margin-top: 1%;
 `;
 
