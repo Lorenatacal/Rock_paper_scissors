@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import AddName from "./AddName";
-import Options from "./Options";
+import Options from "../options/Options";
+import AddName from "../addName/AddName";
 import styled from "styled-components";
 
 const StyledUser = styled.div`

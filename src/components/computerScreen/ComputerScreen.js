@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Options from "./Options";
+import Options from "../options/Options";
 import styled from "styled-components";
 
 const StyledComputer = styled.div`
