@@ -21,7 +21,7 @@ class AddName extends Component {
       showMessage: true,
       showInput: false
     });
-    e.preventDefault();
+    // e.preventDefault();
   };
 
   render() {
@@ -38,6 +38,7 @@ class AddName extends Component {
               placeholder="Type your name here"
             />
             <button
+              data-name="SubmitButton"
               id="button"
               type="submit"
               value="Submit"

@@ -10,3 +10,11 @@ test("AddName should render correctly without submit", () => {
   const wrapper = Enzyme.shallow(<AddName />);
   expect(toJson(wrapper)).toMatchSnapshot();
 });
+test("AddName should render correctly onSubmit", () => {
+  const wrapper = Enzyme.shallow(<AddName />);
+  const submitButton = wrapper.find('[data-name="SubmitButton"]');
+  submitButton.simulate("click");
+  expect(toJson(wrapper)).toMatchSnapshot();
+  expect(wrapper.state("showMessage")).toEqual(true);
+  expect(wrapper.state("showInput")).toEqual(false);
+});
