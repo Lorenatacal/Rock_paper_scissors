@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AddName should render correctly without submit 1`] = `
+<div>
+  <div>
+    <input
+      onChange={[Function]}
+      placeholder="Type your name here"
+      type="text"
+    />
+    <button
+      id="button"
+      onClick={[Function]}
+      type="submit"
+      value="Submit"
+    >
+      Submit
+    </button>
+  </div>
+  <p />
+</div>
+`;
