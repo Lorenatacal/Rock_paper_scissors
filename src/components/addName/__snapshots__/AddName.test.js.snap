@@ -1,10 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`AddName should render correctly onChamge 1`] = `
+exports[`AdName should render correctly onChange 1`] = `
 <div>
   <div />
   <p>
     Wecome to the game 
+    Lorena
   </p>
 </div>
 `;
@@ -22,6 +23,7 @@ exports[`AddName should render correctly without submit 1`] = `
 <div>
   <div>
     <input
+      data-name="userInput"
       onChange={[Function]}
       placeholder="Type your name here"
       type="text"

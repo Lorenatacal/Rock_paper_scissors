@@ -18,3 +18,13 @@ test("AddName should render correctly onSubmit", () => {
   expect(wrapper.state("showMessage")).toEqual(true);
   expect(wrapper.state("showInput")).toEqual(false);
 });
+test("AdName should render correctly onChange", () => {
+  const wrapper = Enzyme.shallow(<AddName />);
+  const instance = wrapper.instance();
+  const userInput = wrapper.find('[data-name="userInput"]');
+  userInput.simulate("change", { target: { value: "Lorena" } });
+  const submitButton = wrapper.find('[data-name="SubmitButton"]');
+  submitButton.simulate("click");
+  expect(toJson(wrapper)).toMatchSnapshot();
+  expect(instance.state.name).toEqual("Lorena");
+});

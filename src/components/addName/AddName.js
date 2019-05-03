@@ -21,7 +21,6 @@ class AddName extends Component {
       showMessage: true,
       showInput: false
     });
-    // e.preventDefault();
   };
 
   render() {
@@ -33,6 +32,7 @@ class AddName extends Component {
         {showInput ? (
           <div>
             <input
+              data-name="userInput"
               type="text"
               onChange={this.handleChange}
               placeholder="Type your name here"
