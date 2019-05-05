@@ -1,5 +1,27 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`App should render correctly on handleClick 1`] = `
+<styled.div>
+  <Header />
+  <styled.div>
+    <styled.p />
+    <styled.p />
+    <styled.p>
+      Draw
+    </styled.p>
+    <p>
+      0
+      -
+      0
+    </p>
+  </styled.div>
+  <UserScreen
+    action={[Function]}
+  />
+  <ComputerScreen />
+</styled.div>
+`;
+
 exports[`App should render correctlyt 1`] = `
 <styled.div>
   <Header />
