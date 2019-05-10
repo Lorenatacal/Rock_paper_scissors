@@ -5,6 +5,7 @@ import Enzyme from "enzyme";
 import Adapter from "enzyme-adapter-react-16";
 import toJson from "enzyme-to-json";
 import randomOptions from "../utils/randomOptions.js";
+import MockAdapter from "axios-mock-adapter";
 
 Enzyme.configure({ adapter: new Adapter() });
 
@@ -24,10 +25,9 @@ test("App should render correctly on handleClick", () => {
     name: "scissors"
   };
   const userValue = "scissors";
-  let randomOptions = () => {
-    return "paper";
-  };
-  const computerValue = randomOptions();
+  const mockRandomOptions = jest.fn("paper");
+  // mockedRandomOptions = mockReturnValue("paper");
+  console.log(mockRandomOptions, "mock");
 
   wrapper.instance().handleClick(e);
 
