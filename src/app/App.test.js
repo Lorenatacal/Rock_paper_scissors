@@ -4,10 +4,11 @@ import App from "./App";
 import Enzyme from "enzyme";
 import Adapter from "enzyme-adapter-react-16";
 import toJson from "enzyme-to-json";
-import randomOptions from "../utils/randomOptions.js";
-import MockAdapter from "axios-mock-adapter";
+// import randomOptions from "../utils/randomOptions.js";
+//import MockAdapter from "axios-mock-adapter";
 
 Enzyme.configure({ adapter: new Adapter() });
+// jest.mock("../utils/randomOptions.js");
 
 it("renders without crashing", () => {
   const div = document.createElement("div");
@@ -21,16 +22,16 @@ test("App should render correctlyt", () => {
 test("App should render correctly on handleClick", () => {
   const wrapper = Enzyme.shallow(<App />);
   const e = {
-    target: {},
-    name: "scissors"
+    target: {
+      name: "scissors"
+    }
   };
   const userValue = "scissors";
-  const mockRandomOptions = jest.fn("paper");
-  // mockedRandomOptions = mockReturnValue("paper");
-  console.log(mockRandomOptions, "mock");
+  // randomOptions.mockReturnValue("paper");
+  // const computerValue = randomOptions();
 
   wrapper.instance().handleClick(e);
 
-  expect(wrapper.update().state().userValue).toEqual("scissors");
+  expect(wrapper.state().userValue).toEqual("scissors");
   expect(toJson(wrapper)).toMatchSnapshot();
 });

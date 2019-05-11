@@ -10,26 +10,7 @@ exports[`AdName should render correctly on handleChange 1`] = `
 </div>
 `;
 
-exports[`AdName should render correctly onChange 1`] = `
-<div>
-  <div />
-  <p>
-    Wecome to the game 
-    Lorena
-  </p>
-</div>
-`;
-
 exports[`AddName should render correctly onClick 1`] = `
-<div>
-  <div />
-  <p>
-    Wecome to the game 
-  </p>
-</div>
-`;
-
-exports[`AddName should render correctly onSubmit 1`] = `
 <div>
   <div />
   <p>

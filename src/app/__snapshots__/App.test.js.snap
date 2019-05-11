@@ -4,8 +4,12 @@ exports[`App should render correctly on handleClick 1`] = `
 <styled.div>
   <Header />
   <styled.div>
-    <styled.p />
-    <styled.p />
+    <styled.p>
+      scissors
+    </styled.p>
+    <styled.p>
+      scissors
+    </styled.p>
     <styled.p>
       Draw
     </styled.p>
