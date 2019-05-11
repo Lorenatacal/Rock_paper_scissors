@@ -30,8 +30,11 @@ test("App should render correctly on handleClick", () => {
   const computerValue = randomOptions();
 
   wrapper.instance().handleClick(e);
+  wrapper.update();
+  console.log(wrapper.state().userScore, "d");
 
   expect(wrapper.state().userValue).toEqual("scissors");
   expect(wrapper.state().computerValue).toEqual("paper");
+  expect(wrapper.state().computerScore).toEqual(0);
   expect(toJson(wrapper)).toMatchSnapshot();
 });
