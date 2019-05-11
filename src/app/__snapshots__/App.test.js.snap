@@ -8,13 +8,13 @@ exports[`App should render correctly on handleClick 1`] = `
       scissors
     </styled.p>
     <styled.p>
-      scissors
+      paper
     </styled.p>
     <styled.p>
-      Draw
+      User won
     </styled.p>
     <p>
-      0
+      1
       -
       0
     </p>

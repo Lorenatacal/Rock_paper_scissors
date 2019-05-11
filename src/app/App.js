@@ -48,7 +48,6 @@ class App extends Component {
       this.state.userScore,
       this.state.computerScore
     );
-    console.log(userScore, computerScore, "computerScore");
 
     this.setState({
       userValue: e.target.name,
@@ -56,8 +55,6 @@ class App extends Component {
       userScore,
       computerScore
     });
-
-    console.log("after set state", e.target.name);
   };
 
   render() {
