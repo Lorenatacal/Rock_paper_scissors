@@ -41,7 +41,6 @@ class App extends Component {
   }
 
   handleClick = e => {
-    console.log(e, "called");
     let { userScore, computerScore } = gameEngine(
       this.state.userValue,
       this.state.computerValue,

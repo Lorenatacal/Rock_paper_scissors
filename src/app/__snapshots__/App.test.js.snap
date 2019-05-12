@@ -26,6 +26,32 @@ exports[`App should render correctly on handleClick 1`] = `
 </styled.div>
 `;
 
+exports[`App should render correctly on handleClick 2`] = `
+<styled.div>
+  <Header />
+  <styled.div>
+    <styled.p>
+      scissors
+    </styled.p>
+    <styled.p>
+      paper
+    </styled.p>
+    <styled.p>
+      User won
+    </styled.p>
+    <p>
+      2
+      -
+      0
+    </p>
+  </styled.div>
+  <UserScreen
+    action={[Function]}
+  />
+  <ComputerScreen />
+</styled.div>
+`;
+
 exports[`App should render correctlyt 1`] = `
 <styled.div>
   <Header />

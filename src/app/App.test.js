@@ -31,10 +31,15 @@ test("App should render correctly on handleClick", () => {
 
   wrapper.instance().handleClick(e);
   wrapper.update();
-  console.log(wrapper.state().userScore, "d");
 
   expect(wrapper.state().userValue).toEqual("scissors");
   expect(wrapper.state().computerValue).toEqual("paper");
   expect(wrapper.state().computerScore).toEqual(0);
+  expect(wrapper.state().userScore).toEqual(0);
+  expect(toJson(wrapper)).toMatchSnapshot();
+
+  wrapper.instance().handleClick(e);
+  expect(wrapper.state().computerScore).toEqual(0);
+  expect(wrapper.state().userScore).toEqual(1);
   expect(toJson(wrapper)).toMatchSnapshot();
 });
