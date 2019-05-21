@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import styled from "styled-components";
 
 const StyledImage = styled.img`
-  height: 80px;
+  height: 60%;
   width: 25%;
 
   cursor: pointer;
