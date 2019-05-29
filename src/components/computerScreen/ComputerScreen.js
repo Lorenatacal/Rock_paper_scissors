@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 const StyledComputer = styled.div`
   height: 53%;
-  margin-top: -1%;
+  margin-top: 1%;
   margin-bottom: 1%;
   width: 47%;
   position: absolute;
@@ -14,7 +14,7 @@ const StyledComputer = styled.div`
   right: 2%;
   background-color: rgb(241, 239, 239);
 `;
-const StyledText = styled.p`
+const StyledText = styled.span`
   margin-top: 1%;
 `;
 

@@ -11,23 +11,16 @@ const StyledWrapper = styled.div`
   text-align: center;
 `;
 const StyledResult = styled.div`
-  margin-left: 1%;
-  margin-right: 1%;
+  width: 98%;
   background-image: linear-gradient(to right, orangered, rgb(255, 69, 0, 0.7));
   color: black;
+  display: inline-flex;
+  justify-content: space-around;
 `;
-const StyledUserValue = styled.p`
-  width: 38%;
-  float: left;
-`;
-const StyledComputerValue = styled.p`
-  width: 38%;
-  float: right;
-`;
-const StyledWinner = styled.p`
-  text-align: center;
-  margin-top: -1%;
-`;
+const StyledUserValue = styled.span``;
+const StyledComputerValue = styled.span``;
+const StyledWinner = styled.span``;
+const StyledScore = styled.span``;
 
 class App extends Component {
   constructor(props) {
@@ -69,11 +62,11 @@ class App extends Component {
         <Header />
         <StyledResult>
           <StyledUserValue>{this.state.userValue}</StyledUserValue>
-          <StyledComputerValue>{this.state.computerValue}</StyledComputerValue>
           <StyledWinner>{winner}</StyledWinner>
-          <p>
+          <StyledScore>
             {userScore}-{computerScore}
-          </p>
+          </StyledScore>
+          <StyledComputerValue>{this.state.computerValue}</StyledComputerValue>
         </StyledResult>
         <UserScreen action={this.handleClick} />
         <ComputerScreen />

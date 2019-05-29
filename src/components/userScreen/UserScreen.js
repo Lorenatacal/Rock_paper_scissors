@@ -5,7 +5,7 @@ import styled from "styled-components";
 
 const StyledUser = styled.div`
   height: 53%;
-  margin-top: -1%;
+  margin-top: 1%;
   margin-bottom: 1%;
   width: 47%;
   position: absolute;
