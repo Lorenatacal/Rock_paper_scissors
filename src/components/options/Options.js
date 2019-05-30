@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 
+const StyledScreen = styled.div``;
 const StyledImage = styled.img`
   height: 60%;
   width: 25%;
@@ -11,12 +12,13 @@ const StyledImage = styled.img`
     background-color: lightgray;
   }
 `;
+const StyledTitle = styled.p``;
 
 class Options extends Component {
   render() {
     return (
-      <div>
-        <p> Please select your response:</p>
+      <StyledScreen>
+        <StyledTitle> Please select your response:</StyledTitle>
         <StyledImage
           src="https://cdn0.iconfinder.com/data/icons/rock-paper-scissors-emoji/792/rock-paper-scissors-emoji-cartoon-023-512.png"
           alt="rock"
@@ -35,7 +37,7 @@ class Options extends Component {
           name="scissors"
           onClick={this.props.action}
         />
-      </div>
+      </StyledScreen>
     );
   }
 }
