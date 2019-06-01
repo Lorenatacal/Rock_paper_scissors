@@ -18,12 +18,14 @@ const StyledUser = styled.div`
   right: 1%;
   color: black;
 `;
+const StyledTitle = styled.span``;
 
 class UserScreen extends Component {
   render() {
     return (
       <StyledUser>
         <AddName />
+        <StyledTitle>Please select your respone</StyledTitle>
         <Options action={this.props.action} />
       </StyledUser>
     );

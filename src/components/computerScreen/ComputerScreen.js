@@ -14,15 +14,15 @@ const StyledComputer = styled.div`
   right: 2%;
   background-color: rgb(241, 239, 239);
 `;
-const StyledText = styled.span`
-  margin-top: 1%;
+const StyledText = styled.p`
+  margin-top: 7%;
 `;
 
 class ComputerScreen extends Component {
   render() {
     return (
       <StyledComputer>
-        <StyledText> Computer's Options</StyledText>
+        <StyledText> Computer's Options:</StyledText>
         <Options />
       </StyledComputer>
     );

@@ -10,13 +10,14 @@ const StyledWrapper = styled.div`
   margin: 1%;
   text-align: center;
 `;
-const StyledResult = styled.div`
+const StyledResult = styled.section`
   width: 98%;
   background-image: linear-gradient(to right, orangered, rgb(255, 69, 0, 0.7));
   color: black;
   display: inline-flex;
   justify-content: space-around;
 `;
+const StyledPlayers = styled.section``;
 const StyledUserValue = styled.span``;
 const StyledComputerValue = styled.span``;
 const StyledWinner = styled.span``;
@@ -68,8 +69,10 @@ class App extends Component {
           </StyledScore>
           <StyledComputerValue>{this.state.computerValue}</StyledComputerValue>
         </StyledResult>
-        <UserScreen action={this.handleClick} />
-        <ComputerScreen />
+        <StyledPlayers>
+          <UserScreen action={this.handleClick} />
+          <ComputerScreen />
+        </StyledPlayers>
       </StyledWrapper>
     );
   }
