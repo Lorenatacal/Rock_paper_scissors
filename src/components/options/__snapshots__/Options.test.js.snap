@@ -1,24 +1,23 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Options should render correctly 1`] = `
-<div>
-  <p>
-     Please select your response:
-  </p>
-  <styled.img
-    alt="rock"
-    name="rock"
-    src="https://cdn0.iconfinder.com/data/icons/rock-paper-scissors-emoji/792/rock-paper-scissors-emoji-cartoon-023-512.png"
-  />
-  <styled.img
-    alt="paper"
-    name="paper"
-    src="https://cdn0.iconfinder.com/data/icons/rock-paper-scissors-emoji/792/rock-paper-scissors-emoji-cartoon-015-512.png"
-  />
-  <styled.img
-    alt="scissors"
-    name="scissors"
-    src="https://cdn0.iconfinder.com/data/icons/rock-paper-scissors-emoji/792/rock-paper-scissors-emoji-cartoon-009-512.png"
-  />
-</div>
+<styled.div>
+  <styled.div>
+    <styled.img
+      alt="rock"
+      name="rock"
+      src="https://cdn0.iconfinder.com/data/icons/rock-paper-scissors-emoji/792/rock-paper-scissors-emoji-cartoon-023-512.png"
+    />
+    <styled.img
+      alt="paper"
+      name="paper"
+      src="https://cdn0.iconfinder.com/data/icons/rock-paper-scissors-emoji/792/rock-paper-scissors-emoji-cartoon-015-512.png"
+    />
+    <styled.img
+      alt="scissors"
+      name="scissors"
+      src="https://cdn0.iconfinder.com/data/icons/rock-paper-scissors-emoji/792/rock-paper-scissors-emoji-cartoon-009-512.png"
+    />
+  </styled.div>
+</styled.div>
 `;

@@ -3,7 +3,7 @@
 exports[`ComputerScreen should render correctly 1`] = `
 <styled.div>
   <styled.p>
-     Computer's Options
+     Computer's Options:
   </styled.p>
   <Options />
 </styled.div>

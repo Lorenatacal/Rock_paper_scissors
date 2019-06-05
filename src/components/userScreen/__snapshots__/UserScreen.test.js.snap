@@ -3,6 +3,9 @@
 exports[`UserScreen should render correctly 1`] = `
 <styled.div>
   <AddName />
+  <styled.span>
+    Please select your respone
+  </styled.span>
   <Options />
 </styled.div>
 `;

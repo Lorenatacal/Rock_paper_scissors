@@ -3,73 +3,79 @@
 exports[`App should render correctly on handleClick 1`] = `
 <styled.div>
   <Header />
-  <styled.div>
-    <styled.p>
+  <styled.section>
+    <styled.span>
       scissors
-    </styled.p>
-    <styled.p>
-      paper
-    </styled.p>
-    <styled.p>
+    </styled.span>
+    <styled.span>
       User won
-    </styled.p>
-    <p>
+    </styled.span>
+    <styled.span>
       1
       -
       0
-    </p>
-  </styled.div>
-  <UserScreen
-    action={[Function]}
-  />
-  <ComputerScreen />
+    </styled.span>
+    <styled.span>
+      paper
+    </styled.span>
+  </styled.section>
+  <styled.section>
+    <UserScreen
+      action={[Function]}
+    />
+    <ComputerScreen />
+  </styled.section>
 </styled.div>
 `;
 
 exports[`App should render correctly on handleClick 2`] = `
 <styled.div>
   <Header />
-  <styled.div>
-    <styled.p>
+  <styled.section>
+    <styled.span>
       scissors
-    </styled.p>
-    <styled.p>
-      paper
-    </styled.p>
-    <styled.p>
+    </styled.span>
+    <styled.span>
       User won
-    </styled.p>
-    <p>
+    </styled.span>
+    <styled.span>
       2
       -
       0
-    </p>
-  </styled.div>
-  <UserScreen
-    action={[Function]}
-  />
-  <ComputerScreen />
+    </styled.span>
+    <styled.span>
+      paper
+    </styled.span>
+  </styled.section>
+  <styled.section>
+    <UserScreen
+      action={[Function]}
+    />
+    <ComputerScreen />
+  </styled.section>
 </styled.div>
 `;
 
 exports[`App should render correctlyt 1`] = `
 <styled.div>
   <Header />
-  <styled.div>
-    <styled.p />
-    <styled.p />
-    <styled.p>
+  <styled.section>
+    <styled.span />
+    <styled.span>
       Draw
-    </styled.p>
-    <p>
+    </styled.span>
+    <styled.span>
       0
       -
       0
-    </p>
-  </styled.div>
-  <UserScreen
-    action={[Function]}
-  />
-  <ComputerScreen />
+    </styled.span>
+    <styled.span />
+  </styled.section>
+  <styled.section>
+    <UserScreen
+      action={[Function]}
+    />
+    <ComputerScreen />
+  </styled.section>
 </styled.div>
 `;
