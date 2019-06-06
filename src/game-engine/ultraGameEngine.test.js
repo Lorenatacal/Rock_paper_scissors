@@ -6,3 +6,6 @@ test("gameWinner() should retun 1 if we pass 'scissorsrock' as argument", () => 
 test("gameWinner() should return -1 if we pass 'rockscissors' as argument", () => {
   expect(gameWinner("rockscissors")).toEqual(-1);
 });
+test("gameWinner() should return 0 if we pass 'rockrock' as argument", () => {
+  expect(gameWinner("rockrock")).toEqual(0);
+});
