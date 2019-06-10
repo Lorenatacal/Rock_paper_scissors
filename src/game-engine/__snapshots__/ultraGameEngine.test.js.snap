@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`rules to have correct shape 1`] = `
+Object {
+  "paperpaper": 0,
+  "paperrock": 1,
+  "paperscissors": -1,
+  "rockpaper": -1,
+  "rockrock": 0,
+  "rockscissors": -1,
+  "scissorspaper": 1,
+  "scissorsrock": 1,
+  "scissorsscissors": 0,
+}
+`;
