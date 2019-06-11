@@ -3,15 +3,26 @@ import gameWinner from "./ultraGameEngine";
 import { rules } from "./ultraGameEngine";
 import toJson from "enzyme-to-json";
 
-test("gameWinner() should retun 1 if we pass 'scissorsrock' as argument", () => {
-  expect(gameWinner("scissorsrock")).toEqual(1);
+describe("gameWinner()", () => {
+  let winner;
+  let userScore = 0;
+  let computerScore = 0;
+
+  test("should increase userScore and return a success message when the user wins", () => {
+    const userValue = "scissors";
+    const computerValue = "rock";
+
+    let result = gameWinner(userValue, computerValue);
+    let expectedResult = {
+      winner: "User won",
+      userScore: 1,
+      computerScore: 0
+    };
+
+    expect(result).toEqual(expectedResult);
+  });
 });
-test("gameWinner() should return -1 if we pass 'rockscissors' as argument", () => {
-  expect(gameWinner("rockscissors")).toEqual(-1);
-});
-test("gameWinner() should return 0 if we pass 'rockrock' as argument", () => {
-  expect(gameWinner("rockrock")).toEqual(0);
-});
-test("rules to have correct shape", () => {
+
+test("rules should have correct shape", () => {
   expect(rules).toMatchSnapshot();
 });
