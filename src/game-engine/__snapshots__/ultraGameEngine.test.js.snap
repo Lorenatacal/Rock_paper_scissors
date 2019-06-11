@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`rules to have correct shape 1`] = `
+exports[`rules should have correct shape 1`] = `
 Object {
   "paperpaper": 0,
   "paperrock": 1,
