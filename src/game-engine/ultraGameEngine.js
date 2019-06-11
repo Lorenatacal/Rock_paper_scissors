@@ -35,6 +35,11 @@ export default function gameWinner(
       winner: "Computer won",
       userScore: userScore,
       computerScore: computerScore + 1
+    },
+    0: {
+      winner: "Draw",
+      userScore,
+      computerScore
     }
   };
 
