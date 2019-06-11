@@ -21,6 +21,20 @@ describe("gameWinner()", () => {
 
     expect(result).toEqual(expectedResult);
   });
+
+  test("should increase computerScore and return a success message when the user wins", () => {
+    const userValue = "rock";
+    const computerValue = "scissors";
+
+    let result = gameWinner(userValue, computerValue);
+    let expectedResult = {
+      winner: "Computer won",
+      userScore: 0,
+      computerScore: 1
+    };
+
+    expect(result).toEqual(expectedResult);
+  });
 });
 
 test("rules should have correct shape", () => {
