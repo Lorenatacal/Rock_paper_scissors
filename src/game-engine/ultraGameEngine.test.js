@@ -49,6 +49,20 @@ describe("gameWinner()", () => {
 
     expect(result).toEqual(expectedResult);
   });
+
+  test.only("should retun a draw message before the user selects an option", () => {
+    const userValue = "";
+    const computerValue = "";
+
+    let result = gameWinner(userValue, computerValue);
+    let expectedResult = {
+      winner: "Draw",
+      userScore: 0,
+      computerScore: 0
+    };
+
+    expect(result).toEqual(expectedResult);
+  });
 });
 
 test("rules should have correct shape", () => {
