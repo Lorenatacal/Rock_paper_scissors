@@ -4,6 +4,7 @@ import UserScreen from "../components/userScreen/UserScreen.js";
 import ComputerScreen from "../components/computerScreen/ComputerScreen.js";
 import randomOptions from "../utils/randomOptions.js";
 import gameEngine from "../game-engine/gameEngine.js";
+import gameWinner from "../game-engine/ultraGameEngine.js";
 import styled from "styled-components";
 
 const StyledWrapper = styled.div`
@@ -35,7 +36,7 @@ class App extends Component {
   }
 
   handleClick = e => {
-    let { userScore, computerScore } = gameEngine(
+    let { userScore, computerScore } = gameWinner(
       this.state.userValue,
       this.state.computerValue,
       this.state.userScore,
@@ -51,11 +52,11 @@ class App extends Component {
   };
 
   render() {
-    let { winner, userScore, computerScore } = gameEngine(
-      this.state.userValue,
-      this.state.computerValue,
-      this.state.userScore,
-      this.state.computerScore
+    let { winner, userScore, computerScore } = gameWinner(
+      this.state.userValue, //""
+      this.state.computerValue, //""
+      this.state.userScore, //0
+      this.state.computerScore //0
     );
 
     return (
