@@ -50,7 +50,7 @@ describe("gameWinner()", () => {
     expect(result).toEqual(expectedResult);
   });
 
-  test.only("should retun a draw message before the user selects an option", () => {
+  test("should retun a draw message before the user selects an option", () => {
     const userValue = "";
     const computerValue = "";
 
