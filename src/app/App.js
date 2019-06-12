@@ -3,7 +3,6 @@ import Header from "../components/header/Header.js";
 import UserScreen from "../components/userScreen/UserScreen.js";
 import ComputerScreen from "../components/computerScreen/ComputerScreen.js";
 import randomOptions from "../utils/randomOptions.js";
-import gameEngine from "../game-engine/gameEngine.js";
 import gameWinner from "../game-engine/ultraGameEngine.js";
 import styled from "styled-components";
 
