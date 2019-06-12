@@ -18,13 +18,6 @@ export default function gameWinner(
 ) {
   let option = userValue + computerValue;
 
-  // if (rules[option] === 1) {
-  //   return {
-  //     winner: "User won",
-  //     userScore: userScore + 1,
-  //     computerScore
-  //   };
-  // }
   let winner = {
     1: {
       winner: "User won",
@@ -43,6 +36,7 @@ export default function gameWinner(
     }
   };
 
-  let val = rules[option];
+  let val = rules[option] === undefined ? 0 : rules[option];
+
   return winner[val];
 }
